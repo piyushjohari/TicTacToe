@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+nav{
+    background-color: black;
+    color: blanchedalmond;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul {
+    list-style-type: none;
+
+}
+.gameContainer{
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; 
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.box{
+    border:3px solid black;
+    font-size: 10vw;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding:0px 34px;
+}
+
+.box:hover{
+    background-color: antiquewhite;
+    cursor: pointer;    
+
+}
+
+.gameInfo{
+    padding:0px 34px;
+    font-size: 25px;
+} 
+
+.bl{
+    border-left: 0;
+}
+.br1{
+    border-right: 0;
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+
+ #Reset{
+     border:2px solid black;
+     font-size: 22px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     padding: 4px 10px;
+     background-color: chartreuse;
+     border-radius: 5px;
+    cursor: pointer;
+    margin: 12px;   
+    
+ }
+
+ @media screen and (max-width:800px) {
+     #gamecontainer{
+         width:90%
+     }
+ }
